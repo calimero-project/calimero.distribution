@@ -1,0 +1,21 @@
+Java Libraries
+==============
+
+The Calimero Java libraries are distributed under the
+GNU General Public License (GPL) version 2, with the Classpath Exception.
+
+
+JNI Libraries
+=============
+
+For the Calimero JNI libraries providing serial port access, the LGPL version 2.1 applies.
+
+
+ETS 4 Import
+============
+
+For the XSLT stylesheets (ETS 4 project file import), the LGPL version 2.1 applies.
+
+
+
+See the corresponding licenses included in this distribution.
