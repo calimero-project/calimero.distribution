@@ -31,10 +31,12 @@
 	<modules>
 		<module>../calimero-core</module>
 		<module>../calimero-tools</module>
+		<module>../calimero-server</module>
+		<module>../calimero-device</module>
 		<module>../calimero-rxtx</module>
 		<module>../calimero-gui</module>
 		<module>../serial-native</module>
-		<module>../import-ets4-xml</module>
+		<module>../import-ets-xml</module>
 	</modules>
 
 	<build>
@@ -59,8 +61,6 @@
 				<configuration>
 					<descriptors>
 						<descriptor>src/assembly/distribution-bin.xml</descriptor>
-						<descriptor>src/assembly/distribution-sources.xml</descriptor>
-						<descriptor>src/assembly/distribution-doc.xml</descriptor>
 						<descriptor>src/assembly/distribution-all.xml</descriptor>
 					</descriptors>
 					<appendAssemblyId>true</appendAssemblyId>
@@ -103,7 +103,7 @@
 			<id>sourceforge</id>
 			<name>SourceForge File Release</name>
 			<uniqueVersion>false</uniqueVersion>
-			<url>sftp://frs.sourceforge.net:/home/frs/project/c/ca/calimero/${project.version}</url>
+			<url>sftp://frs.sourceforge.net:/home/frs/project/calimero/OldFiles</url>
 		</repository>
 	</distributionManagement>
 </project>
