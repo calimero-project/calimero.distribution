@@ -31,7 +31,7 @@
 		<dependencySet>
 			<useProjectAttachments>true</useProjectAttachments>
 			<includes>
-				<include>${project.groupId}:import-ets4-xml:zip:${project.version}</include>
+				<include>${project.groupId}:import-ets-xml:zip:${project.version}</include>
 				<include>${project.groupId}:serial-native:zip:${project.version}</include>
 			</includes>
 			<useProjectArtifact>false</useProjectArtifact>
@@ -42,7 +42,7 @@
 	<moduleSets>
 		<moduleSet>
 			<excludes>
-				<exclude>${project.groupId}:import-ets4-xml</exclude>
+				<exclude>${project.groupId}:import-ets-xml</exclude>
 				<exclude>${project.groupId}:serial-native</exclude>
 			</excludes>
 			<binaries>

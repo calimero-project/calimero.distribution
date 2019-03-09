@@ -8,7 +8,7 @@
 	<description>Calimero, a free KNX network library</description>
 	<url>https://github.com/calimero-project/</url>
 	<inceptionYear>2006</inceptionYear>
-	<version>2.2</version>
+	<version>2.4</version>
 
 	<properties>
 		<calimero-path>../</calimero-path>
@@ -44,7 +44,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-gpg-plugin</artifactId>
-				<version>1.5</version>
+				<version>1.6</version>
 				<executions>
 					<execution>
 						<id>sign-artifacts</id>
@@ -57,7 +57,7 @@
 			</plugin>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.4.1</version>
+				<version>3.0.0</version>
 				<configuration>
 					<descriptors>
 						<descriptor>src/assembly/distribution-bin.xml</descriptor>
@@ -72,6 +72,29 @@
 						<goals>
 							<goal>single</goal>
 						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>3.0.0-M2</version>
+				<executions>
+					<execution>
+						<id>enforce-versions</id>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<requireMavenVersion>
+									<version>3.5.3</version>
+								</requireMavenVersion>
+								<requireJavaVersion>
+									<version>1.8</version>
+								</requireJavaVersion>
+							</rules>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
@@ -93,7 +116,7 @@
 		</dependency>
 		<dependency>
 			<groupId>com.github.calimero</groupId>
-			<artifactId>import-ets4-xml</artifactId>
+			<artifactId>import-ets-xml</artifactId>
 			<type>zip</type>
 			<version>${project.version}</version>
 		</dependency>

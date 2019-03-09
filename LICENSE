@@ -11,10 +11,10 @@ JNI Libraries
 For the Calimero JNI libraries providing serial port access, the LGPL version 2.1 applies.
 
 
-ETS 4 Import
+ETS XML Import
 ============
 
-For the XSLT stylesheets (ETS 4 project file import), the LGPL version 2.1 applies.
+For the XSLT stylesheets (ETS project file import), the LGPL version 2.1 applies.
 
 
 

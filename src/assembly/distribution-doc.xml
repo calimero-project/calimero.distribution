@@ -24,7 +24,7 @@
 	<moduleSets>
 		<moduleSet>
 			<excludes>
-				<exclude>${project.groupId}:import-ets4-xml</exclude>
+				<exclude>${project.groupId}:import-ets-xml</exclude>
 				<exclude>${project.groupId}:serial-native</exclude>
 			</excludes>
 			<binaries>
