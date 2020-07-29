@@ -116,13 +116,11 @@ Take care when using IPv6 addresses, Network Address Translation (NAT), or multi
 FT1.2 and TP-UART Connections
 -------------------------
 The FT1.2 protocol and TP-UART require access to a serial port communication resource.
-Therefore, Calimero supports three ways of access to a serial port, with availability checked in the following order:
-
-1. Java ME (Micro-Edition) CDC serial connection. This connection type will not be available at all on "bigger" environments like Java SE. Even on a ME CDC platform, a serial connection implementation might not be provided.
+Calimero supports two ways of access to a serial port, with availability checked in the following order:
   
-2. Calimero built-in support using JNI and the serialcom library. The C++ source code is provided for Windows and Unix/MacOS platforms. Compiled .dll libraries for Windows and .so for Linux are available (see the corresponding READMEs for system and compiler versions). The sources should compile on any compliant Windows 32/64 platform as well as common Linux platforms. The simplest way to ensure the Java runtime detects the serial library is to put it into the current working directory. The better way is to use the dedicated Java library lookup path, e.g., on Microsoft Windows, \<java-home\>\bin.
+1. Calimero built-in support using JNI and the serialcom library. The C++ source code is provided for Windows and Unix/MacOS platforms. Compiled .dll libraries for Windows and .so for Linux are available (see the corresponding READMEs for system and compiler versions). The sources should compile on any compliant Windows 32/64 platform as well as common Linux platforms. The simplest way to ensure the Java runtime detects the serial library is to put it into the current working directory. The better way is to use the dedicated Java library lookup path, e.g., on Microsoft Windows, \<java-home\>\bin.
   
-3. Use of RXTX (or any compatible) library, if such library is available and configured, i.e., accessible via the class path so the Java class loader finds it. The calimero-rxtx jar archive, being the Calimero adapter to access the RXTX library, has to be on the Java class path, too.
+2. Use of RXTX (or any compatible) library, if such library is available and configured, i.e., accessible via the class path so the Java class loader finds it. The calimero-rxtx jar archive, being the Calimero adapter to access the RXTX library, has to be on the Java class path, too.
 
 If any of the connection prerequisites is not met, i.e., you do not have a Java ME environment, you do not want to use additional native (JNI) code, or you do not have a RXTX library, that way of accessing the serial port is skipped by Calimero. 
 In other words, you have to ensure at least one way of connection support for serial communication.
