@@ -7,7 +7,7 @@ The name Calimero origins from an inside joke: Calimero is not a falcon, referri
 
 * Current development versions on Github: <https://github.com/calimero-project/>
 * Distributions on SourceForge: <http://sourceforge.net/projects/calimero/>
-* Calimero group identifier for artifacts in JCenter and Maven: com.github.calimero
+* Calimero group identifier for artifacts in Maven: com.github.calimero
 
 
 What's in the Egg
